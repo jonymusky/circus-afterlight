@@ -37,6 +37,7 @@ export class Soundscape {
     if (!this.ctx) this.init();
     await this.ctx.resume();
     this.enabled = !this.enabled;
+    this.wasPlaying = false; // Resume on the current audio clock, never replay muted beats.
     this.master.gain.setTargetAtTime(
       this.enabled ? 0.62 : 0,
       this.ctx.currentTime,
