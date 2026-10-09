@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#151c29" />
+    <meta
+      name="description"
+      content="El circo vuelve a encenderse. Un homenaje arcade moderno, hecho para jugar en tu navegador."
+    />
+    <title>Circus Afterlight — Que empiece el espectáculo</title>
+    <link rel="preload" as="image" href="./assets/circus-stage.webp" />
+    <link rel="preload" as="image" href="./assets/lion-run.webp" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./" aria-label="Circus Afterlight, inicio"
+        ><span class="brand-symbol">✦</span> AFTERLIGHT
+        <span class="brand-sub">CIRCUS COMPANY</span></a
+      >
+      <div class="header-right">
+        <span class="edition">Un clásico, otra vida.</span
+        ><a
+          href="https://github.com/jonymusky/circus-afterlight"
+          target="_blank"
+          rel="noopener"
+          >Código abierto ↗</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="marquee">
+        <span><i></i> La función está por comenzar</span
+        ><span>Est. 1984 / Reimaginado 2026</span>
+      </div>
+      <section class="theatre" aria-label="Juego Circus Afterlight">
+        <canvas
+          id="stage"
+          aria-label="Pista de circo. Saltá los aros y las vasijas de fuego con espacio, flecha arriba o el botón Saltar."
+        ></canvas>
+        <div class="hud" hidden>
+          <div><span>Puntaje</span><strong id="score">000000</strong></div>
+          <div class="act">
+            <span id="act-name">Acto I · La chispa</span
+            ><strong id="combo">¡A escena!</strong>
+          </div>
+          <div class="life">
+            <span>Vidas</span
+            ><strong id="lives" aria-label="3 vidas">● ● ●</strong>
+          </div>
+        </div>
+        <div class="intro" id="overlay">
+          <div class="intro-inner">
+            <p class="eyebrow" id="eyebrow">El espectáculo continúa</p>
+            <h1 id="title">CIRCUS<span>AFTERLIGHT</span></h1>
+            <p class="tagline" id="description">
+              El mismo vértigo. Una nueva magia.<br />Vos, un león y el salto
+              perfecto.
+            </p>
+            <button class="primary" id="play">
+              Entrar a la pista <span>↗</span>
+            </button>
+            <p class="play-hint" id="hint">
+              Espacio para saltar · Sin descargas · Sin fichas
+            </p>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <span id="stage-label">01 / El salto de fuego</span>
+          <div>
+            <button id="sound" aria-pressed="false" aria-label="Activar sonido">
+              Sonido off</button
+            ><button id="pause" hidden aria-label="Pausar juego">Pausa Ⅱ</button
+            ><button id="fullscreen" aria-label="Pantalla completa">⛶</button>
+          </div>
+        </div>
+        <div class="toast" id="toast" aria-live="polite"></div>
+        <button id="jump" hidden aria-label="Saltar">
+          SALTAR <span>↑</span>
+        </button>
+      </section>
+      <section class="below">
+        <div class="invitation">
+          <span class="tiny-star">✳</span>
+          <p>
+            Un salto de nostalgia.<br /><strong
+              >Todo lo demás, de otro mundo.</strong
+            >
+          </p>
+        </div>
+        <div class="instructions">
+          <span><kbd>SPACE</kbd> / <kbd>↑</kbd> Saltar</span
+          ><span><kbd>P</kbd> Pausa</span
+          ><span class="record">Tu récord <b id="best">000000</b></span>
+        </div>
+      </section>
+      <footer>
+        <span
+          >Un homenaje independiente a Circus Charlie. Arte y sonido
+          originales.</span
+        ><span>Hecho para volver a jugar. ✦</span>
+      </footer>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

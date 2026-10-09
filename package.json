@@ -1,0 +1,17 @@
+{
+  "name": "circus-afterlight",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A modern browser arcade tribute. Original art, pure Canvas, zero runtime dependencies.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/main.js && node --check src/game.js && node --check src/renderer.js && node --check src/audio.js"
+  },
+  "license": "MIT"
+}
