@@ -2,7 +2,7 @@
 
 **El mismo vértigo. Una nueva magia.** Un homenaje moderno e independiente a Circus Charlie, jugable directamente en el navegador.
 
-[**Entrar a la pista**](https://jonymusky.github.io/circus-afterlight/)
+[**Entrar a la pista**](https://circus-afterlight.jonymusky.com/)
 
 ![Circus Afterlight: carpa iluminada, león y aros de fuego](docs/preview.webp)
 
@@ -55,3 +55,11 @@ Esta primera edición reinterpreta el número del león y los aros de fuego, con
 Ver [CONTRIBUTING.md](CONTRIBUTING.md). Código bajo licencia [MIT](LICENSE).
 
 Arte, procedencia y prompts: [dirección de arte](docs/ART-DIRECTION.md). Evidencia de validación: [QA](docs/QA.md).
+
+## Dominio e indexación
+
+Dominio: `circus-afterlight.jonymusky.com`. CNAME DNS hacia `jonymusky.github.io`, sin proxy; GitHub Pages gestiona el certificado TLS y la redirección HTTPS. El build publica `CNAME`, `robots.txt` y `sitemap.xml`.
+
+La portada entrega HTML estático con descripción y preguntas frecuentes, URL canónica, Open Graph, Twitter Card y JSON-LD `VideoGame`. Los metadatos usan únicamente datos verificables del juego. La imagen social vive en `assets/social-preview.jpg`. No se inventan reseñas ni puntuaciones.
+
+Esto facilita el rastreo y la comprensión; no garantiza indexación, posiciones ni menciones en respuestas de IA. No se agregó `llms.txt`: [Google indica](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) que no aporta visibilidad en sus funciones de IA. La indexación y las métricas reales deberán comprobarse con Search Console; no se configuraron analítica ni tracking.

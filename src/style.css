@@ -459,3 +459,62 @@ footer {
   border: 0;
   border-radius: 0;
 }
+
+.about-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 42px 0;
+  border-bottom: 1px solid #ffffff17;
+}
+.about-game h2 {
+  font:
+    25px/1.25 Georgia,
+    serif;
+  color: var(--cream);
+  margin: 0 0 20px;
+  letter-spacing: 0;
+}
+.about-game p {
+  color: #b9c2ca;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 65ch;
+}
+.about-game a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.game-questions h2 {
+  font-size: 21px;
+}
+.game-questions details {
+  border-bottom: 1px solid #ffffff17;
+}
+.game-questions summary {
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 13px;
+  color: var(--cream);
+}
+.game-questions summary:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+}
+.game-questions p {
+  margin: 0 0 18px;
+}
+.no-script {
+  padding: 20px;
+  color: var(--cream);
+}
+@media (max-width: 700px) {
+  .about-game {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 6px;
+  }
+  .about-game h2 {
+    font-size: 23px;
+  }
+}
