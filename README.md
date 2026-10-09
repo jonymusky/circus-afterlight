@@ -4,6 +4,8 @@
 
 [**Entrar a la pista**](https://jonymusky.github.io/circus-afterlight/)
 
+![Circus Afterlight: carpa iluminada, león y aros de fuego](docs/preview.webp)
+
 Una carpa nocturna dibujada con Canvas, un pequeño artista sobre un león, aros de fuego, luces volumétricas y una banda sonora sintetizada. Tres actos de dificultad creciente, 24 obstáculos, tres vidas y combos por saltos precisos. Escenografía y sprites originales asistidos por IA, efectos visuales procedurales y audio sintetizado localmente: sin assets externos, cuentas, anuncios ni dependencias de producción.
 
 ## Jugar
@@ -51,3 +53,5 @@ Esta primera edición reinterpreta el número del león y los aros de fuego, con
 ## Contribuir
 
 Ver [CONTRIBUTING.md](CONTRIBUTING.md). Código bajo licencia [MIT](LICENSE).
+
+Arte, procedencia y prompts: [dirección de arte](docs/ART-DIRECTION.md). Evidencia de validación: [QA](docs/QA.md).

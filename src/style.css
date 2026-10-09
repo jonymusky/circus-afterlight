@@ -451,3 +451,11 @@ footer {
     transition: none !important;
   }
 }
+
+.theatre:fullscreen {
+  width: 100vw;
+  height: 100dvh;
+  max-height: none;
+  border: 0;
+  border-radius: 0;
+}
